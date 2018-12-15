@@ -5,6 +5,7 @@ RUN apk update && apk add git libffi libffi-dev gcc g++ make openssl-dev openssl
     cd /root/ && \
     git clone --depth=1 --recursive https://github.com/byt3bl33d3r/CrackMapExec && \
     cd /root/CrackMapExec && \
+    rm -rf .git && \
     python setup.py install && \
     #run cme just to initialize it
     cme --help && \
