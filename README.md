@@ -1,13 +1,21 @@
 # docker-cme
 Docker implementation for bleeding edge crackmapexec
 
-Build
+Pull:
+
+    docker pull isaudits/crackmapexec
+
+or Build:
 
     ./build.sh
 
-Run
+Pull:
 
-    ./cme.sh
+    docker pull isaudits/crackmapexec
+
+or Build:
+
+    ./build.sh
 
 ### Aliases
 Or, alias the commands in aliases to your .bash_aliases (kali) or .bash_profile (osx) and launch with alias 'cme < options >'

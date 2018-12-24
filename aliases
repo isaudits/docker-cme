@@ -7,8 +7,8 @@
 #
 ###############################################################################
 
-#cme_command='docker run -it --rm -p 80:80 -p 443:443 -p 445:445 cme'
-cme_command='docker run -it --rm cme'
+#cme_command='docker run -it --rm -p 80:80 -p 443:443 -p 445:445 isaudits/crackmapexec'
+cme_command='docker run -it --rm isaudits/crackmapexec'
 
 #Note - kali uses old crackmapexec command; leaving this commented out for time being and using the one in our kali docker image...
 #alias crackmapexec='$cme_command cme'
