@@ -1,18 +1,19 @@
 ###############################################################################
 #
-# Source this in .bash_profile and have kali commands on your console...
+# Source this in .bash_profile and have cme commands on your console...
 #
 # Note - cannot use same variable name if using this technique to alias multiple files;
 # Variable goes into path!
 #
 ###############################################################################
 
-#cme_command='docker run -it --rm -p 80:80 -p 443:443 -p 445:445 isaudits/crackmapexec'
-cme_command='docker run -it --rm isaudits/crackmapexec'
+#cme_command='docker run -it --rm -p 80:80 -p 443:443 -p 445:445 -v '$HOME'/.cme:/root/.cme isaudits/crackmapexec'
 
-#Note - kali uses old crackmapexec command; leaving this commented out for time being and using the one in our kali docker image...
-#alias crackmapexec='$cme_command cme'
+# NOTE - have to break single quote around $HOME to expand variable string; docker run will not accept $HOME variable
+cme_command='docker run -it --rm -v '$HOME'/.cme:/root/.cme isaudits/crackmapexec'
+
 alias cme='$cme_command cme'
+alias cmedb='$cme_command cmedb'
 
 
 
