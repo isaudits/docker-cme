@@ -12,8 +12,8 @@
 # NOTE - have to break single quote around $HOME to expand variable string; docker run will not accept $HOME variable
 cme_command='docker run -it --rm -v '$HOME'/.cme:/root/.cme isaudits/crackmapexec'
 
-alias cme='$cme_command cme'
-alias cmedb='$cme_command cmedb'
+alias cme="$cme_command cme"
+alias cmedb="$cme_command cmedb"
 
 
 
